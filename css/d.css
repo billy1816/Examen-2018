@@ -1,0 +1,33 @@
+body,html{
+	margin:0px
+
+}
+
+h1{
+		
+	text-align: center;
+}
+body{
+    height: 100%;	
+	text-align: center;
+		padding-left:15%;
+	padding-right:15%;
+background-color:white;}
+body,input,select,label{
+	font-size:1vw
+}
+h3{
+	font-size:3vw
+}
+
+#sel1, #multiple, #text1, #checkbox1, #examen{
+	
+}
+
+input[type=checkbox]{width:2%;zoom:1.5}
+form{background-color:#E7F9A4;
+	padding:5%}	
+
+h1{
+	padding-bottom: 50px;
+}
