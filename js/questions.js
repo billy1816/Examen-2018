@@ -125,7 +125,7 @@ function corregirCheckbox(){
 //****************************************************************************************************
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
- document.getElementById("titultext").innerHTML = t;
+ document.getElementById("tituloInput").innerHTML = t;
 }
 
 function ponerDatosSelectHtml(t,opt){
