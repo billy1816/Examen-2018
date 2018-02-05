@@ -7,26 +7,7 @@
 	<type>number</type>
 	<title>A quin any va desapareixer la moneda en paper?</title>
  	<answer>2074</answer>
-    </question>
-    <question id="examen_002">
-	<type>select</type>
-	<title>Quina es la unitat més petita del Bitcoin</title>
-	<option value = "1" selected>mBTC</option>
- 	<option value = "2" >μBTC</option>
- 	<option value = "3" >BTC</option>
- 	<option value = "4" >Satoshi</option>
-	<answer>4</answer>
-    </question>
-	     <question id="examen_003">
-	<type>checkbox</type>
-	<title>Quines característiques té el Bitcoin?</title>
-	<option>Anonimitat</option>
-	<option>Transferències instantànies</option>
-	<option>Centralització econòmica</option>
-	<option>Transferències 100% gratuïtes</option>
-	<answer>0</answer>
-	<answer>1</answer>
-    </question>
+  
 
 	
 </questions>
