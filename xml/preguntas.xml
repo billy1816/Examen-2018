@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE questions>
+<!DOCTYPE examen>
 
-<questions>
-    <question id="profe_001">
+<examen>
+    <question id="examen_001">
 	<type>text</type>
 	<title>Adivina el número secreto... </title>
 	<answer>23</answer>
     </question>
-    <question id="profe_002">
+    <question id="examen_002">
 	<type>select</type>
 	<title>HTML son las iniciales de...</title>
 	<option>Hyper Text Transfer Protocol</option>
@@ -16,7 +16,7 @@
 	<option>Hypertext markup language</option>
 	<answer>2</answer>
     </question>
-     <question id="profe_003">
+     <question id="examen_003">
 	<type>checkbox</type>
 	<title>Marca las frutas</title>
 	<option>naranja</option>
@@ -27,4 +27,4 @@
 	<answer>2</answer>
     </question>
 	
-</questions>
+</examen>
