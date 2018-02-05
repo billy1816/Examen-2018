@@ -9,13 +9,15 @@
  	<answer>2074</answer>
     </question>
     <question id="examen_002">
-	<type>select</type>
-	<title>HTML son las iniciales de...</title>
-	<option>Hyper Text Transfer Protocol</option>
-	<option>File Transfer Protocol</option>
-	<option>Hypertext markup language</option>
-	<answer>2</answer>
+	<title>Quina es la unitat més petita del Bitcoin</title>
+	<option>mBTC</option>
+ 	<option>μBTC</option>
+ 	<option>BTC</option>
+ 	<option>Satoshi</option>
+	<answer>4</answer>
     </question>
+
+    
 
 
      <question id="profe_003">
