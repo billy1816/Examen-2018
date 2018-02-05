@@ -4,9 +4,9 @@
 
 <examen>
     <question id="examen_001">
-	<type>text</type>
-	<title>Adivina el número secreto... </title>
-	<answer>23</answer>
+	<type>number</type>
+	<title>A quin any va desapareixer la moneda en paper?</title>
+	<answer>2074</answer>
     </question>
     <question id="examen_002">
 	<type>select</type>
