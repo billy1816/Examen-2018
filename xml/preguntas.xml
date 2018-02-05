@@ -14,7 +14,7 @@
  	<option>μBTC</option>
  	<option>BTC</option>
  	<option>Satoshi</option>
-	<answer>2</answer>
+	<answer>3</answer>
     </question>
 
     
@@ -22,13 +22,14 @@
 
      <question id="examen_003">
 	<type>checkbox</type>
-	<title>Marca las frutas</title>
-	<option>naranja</option>
-	<option>verde</option>
-	<option>fresa</option>
-	<option>violeta</option>
+	<title>Quines característiques té el Bitcoin?</title>
+	<option>Anonimitat</option>
+	<option>Transferències instantànies</option>
+	<option>Centralització econòmica</option>
+	<option>Transferències 100% gratuïtes</option>
 	<answer>0</answer>
-	<answer>2</answer>
+	<answer>1</answer>
+   
     </question>
 	
 </questions>
