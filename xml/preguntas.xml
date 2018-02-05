@@ -10,15 +10,14 @@
     </question>
     <question id="profe_002">
 	<type>select</type>
-	<title>Quina es la unitat més petita del Bitcoin</title>
-	<option value = "1" selected>mBTC</option>
- 	<option value = "2" >μBTC</option>
- 	<option value = "3" >BTC</option>
- 	<option value = "4" >Satoshi</option>
-	<answer>4</answer>
+	<title>HTML son las iniciales de...</title>
+	<option>Hyper Text Transfer Protocol</option>
+	<option>File Transfer Protocol</option>
+	<option>Hypertext markup language</option>
+	<answer>2</answer>
     </question>
 
-    </question>
+
      <question id="profe_003">
 	<type>checkbox</type>
 	<title>Marca las frutas</title>
