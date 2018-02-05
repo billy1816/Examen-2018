@@ -10,19 +10,20 @@
     </question>
     <question id="examen_002">
 	<type>select</type>
-	<title>HTML son las iniciales de...</title>
-	<option>Hyper Text Transfer Protocol</option>
-	<option>File Transfer Protocol</option>
-	<option>Hypertext markup language</option>
-	<answer>2</answer>
+	<title>Quina es la unitat més petita del Bitcoin</title>
+	<option value = "1" selected>mBTC</option>
+ 	<option value = "2" >μBTC</option>
+ 	<option value = "3" >BTC</option>
+ 	<option value = "4" >Satoshi</option>
+	<answer>4</answer>
     </question>
      <question id="examen_003">
 	<type>checkbox</type>
-	<title>Marca las frutas</title>
-	<option>naranja</option>
-	<option>verde</option>
-	<option>fresa</option>
-	<option>violeta</option>
+	<title>Quines d'aquestes criptomonedes han prevalescut damunt la resta? Pots seleccionar més de una:</title>
+	<option selected>Bitcoin</option>
+ 	<option>Ripple</option>
+ 	<option>Monero</option>
+ 	<option>Bitcoin Cash</option>
 	<answer>0</answer>
 	<answer>2</answer>
     </question>
