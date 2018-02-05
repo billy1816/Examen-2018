@@ -1,33 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
- <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
-<script src='js/questions.js'></script>
-</head>
-<body>
+<?xml version="1.0" encoding="UTF-8"?>
 
- <form id='myform'>
- 
- <h3 id='tituloInput'></h3>
- <input id='num' type='number'>
- <br><br>
- 
- <h3 id='tituloSelect'></h3>
- <select id='sel'>
-  <option selected value="-1">Selecciona una...</option>
- </select>
- <br><br>
- 
- <h3 id='tituloCheckbox'></h3>
- <div id='checkboxDiv'></div>
- <br><br>
- 
- <input type='submit' value='Corregir'>
-</form>
+<!DOCTYPE examen>
 
- <div id='resultadosDiv'></div>
- 
-</body>
-</html>
+<examen>
+    <question id="examen_001">
+     <type>number</type>
+	    <title>A quin any va desapareixer la moneda en paper?</title>
+	    <answer>2074</answer>
+     </question>
+     <question id="examen_002">
+	<type>select</type>
+	<title>Quina es la unitat més petita del Bitcoin</title>
+	<option value = "1" selected>mBTC</option>
+ 	<option value = "2" >μBTC</option>
+ 	<option value = "3" >BTC</option>
+ 	<option value = "4" >Satoshi</option>
+	<answer>4</answer>
+    </question>
+
+	
+</examen>
