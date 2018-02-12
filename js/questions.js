@@ -70,6 +70,20 @@ function gestionarXml(dadesXml){
  }
 }
 
+//MULTIPLE
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+var tituloMultiple = xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var opcionesMultiple = [];
+var nopt = xmlDoc.getElementById("examen_004").getElementsByTagName('option').length;
+for (i = 0; i < nopt; i++) { 
+    opcionesMultiple[i]=xmlDoc.getElementById("examen_004").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosMultipleHtml(tituloMultiple,opcionesMultiple);
+ var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasMultiple[i]=xmlDoc.getElementById("examen_004").getElementsByTagName("answer")[i].innerHTML;
+ }
+}
 //****************************************************************************************************
 //implementación de la corrección
 
