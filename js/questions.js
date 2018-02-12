@@ -82,6 +82,7 @@ for (i = 0; i < nopt; i++) {
  for (i = 0; i < nres; i++) { 
   respuestasMultiple[i]=xmlDoc.getElementById("examen_004").getElementsByTagName("answer")[i].innerHTML;
  }
+}
 
 
 
