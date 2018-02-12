@@ -31,7 +31,7 @@
 	<answer>1</answer>
    
     </question>
-   <question id="examen_004>
+   <question id="examen_004">
 	<type>multiple</type> 
 	<tittle>Quines d'aquestes criptomonedes han prevalescut damunt la resta? Pots seleccionar més de una:</tittle>
 	<option value = "1" selected>Bitcoin</option>
