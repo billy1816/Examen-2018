@@ -68,7 +68,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
  }
-}
+
 
 //MULTIPLE
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
