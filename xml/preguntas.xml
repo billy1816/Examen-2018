@@ -32,15 +32,15 @@
    
     </question>
  
-	<question id="examen_004">
-	<type>checkbox</type>
-	<title>Quines característiques té el Bitcoin?</title>
-	<option>Anonimitat</option>
-	<option>Transferències instantànies</option>
-	<option>Centralització econòmica</option>
-	<option>Transferències 100% gratuïtes</option>
-	<answer>0</answer>
-	<answer>1</answer>
+	  <question id="examen_004">
+	<type>multiple</type> 
+	<title>Quines d'aquestes criptomonedes han prevalescut damunt la resta? Pots seleccionar més de una:</title>
+	<option>Bitcoin</option>
+ 	<option>Monero</option>
+	<option>Ripple</option>
+	<option>Bitcoin Cash</option>
+ 		<answer>0</answare>
+		<answer>2</answare>
 			   
     </question>
 	
