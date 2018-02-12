@@ -169,7 +169,22 @@ function ponerDatosCheckboxHtml(t,opt){
     checkboxContainer.appendChild(document.createElement("br"));
  }  
 }
-
+function ponerDatosMultipleHtml(t,opt){
+ var checkboxContainer=document.getElementById('selectmultipleDiv');
+ document.getElementById('SelectMultiple').innerHTML = t;
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color_"+i);
+    input.type="multiple";
+    input.name="color";
+    input.id="color_"+i;;    
+    checkboxContainer.appendChild(input);
+    checkboxContainer.appendChild(label);
+    checkboxContainer.appendChild(document.createElement("br"));
+ }  
+}
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
 function darRespuestaHtml(r){
