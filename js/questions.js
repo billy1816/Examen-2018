@@ -2,6 +2,7 @@ var formElement=null;
 var numeroSecreto=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
+var respuestasCheckbox1 = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -80,7 +81,7 @@ function gestionarXml(dadesXml){
  ponerDatosCheckboxHtml(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
-  respuestasCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
+  respuestasCheckbox1[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
  }
 
 }
@@ -172,15 +173,16 @@ function ponerDatosCheckboxHtml(t,opt){
     checkboxContainer.appendChild(document.createElement("br"));
  }  
 }
-function ponerDatosMultipleHtml(t,opt){
- var checkboxContainer=document.getElementById('selectmultipleDiv');
- document.getElementById('SelectMultiple').innerHTML = t;
+
+function ponerDatosCheckboxHtml(t,opt){
+ var checkboxContainer1=document.getElementById('checkboxDiv1');
+ document.getElementById('tituloCheckbox1').innerHTML = t;
  for (i = 0; i < opt.length; i++) { 
     var input = document.createElement("input");
     var label = document.createElement("label");
     label.innerHTML=opt[i];
     label.setAttribute("for", "color_"+i);
-    input.type="multiple";
+    input.type="checkbox";
     input.name="color";
     input.id="color_"+i;;    
     checkboxContainer.appendChild(input);
