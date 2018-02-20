@@ -186,9 +186,9 @@ function ponerDatosCheckboxHtml1(t,opt){
     input.type="checkbox1";
     input.name="color";
     input.id="color_"+i;;    
-    checkbox1Container.appendChild(input);
-    checkbox1Container.appendChild(label);
-    checkbox1Container.appendChild(document.createElement("br"));
+    checkboxContainer1.appendChild(input);
+    checkboxContainer1.appendChild(label);
+    checkboxContainer1.appendChild(document.createElement("br"));
  }  
 }
 //****************************************************************************************************
