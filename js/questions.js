@@ -69,15 +69,15 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
  }
-  //CHECKBOX
+  //CHECKBOX1
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloCheckbox = xmlDoc.getElementsByTagName("title")[3].innerHTML;
- var opcionesCheckbox = [];
+ var tituloCheckbox1 = xmlDoc.getElementsByTagName("title")[3].innerHTML;
+ var opcionesCheckbox1 = [];
  var nopt = xmlDoc.getElementById("examen_004").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox[i]=xmlDoc.getElementById("examen_004").getElementsByTagName('option')[i].innerHTML;
+    opcionesCheckbox1[i]=xmlDoc.getElementById("examen_004").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
+ ponerDatosCheckboxHtml(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
