@@ -82,7 +82,7 @@ function gestionarXml(dadesXml){
  ponerDatosCheckboxHtml1(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
-  respuestasCheckbox1[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
+  respuestasCheckbox1[i]=xmlDoc.getElementById("examen_004").getElementsByTagName("answer")[i].innerHTML;
  }
 
 }
