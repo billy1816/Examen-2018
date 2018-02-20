@@ -18,6 +18,7 @@ window.onload = function(){
     corregirNumber();
     corregirSelect();
     corregirCheckbox();
+    corregirCheckbox1();
     presentarNota();
    }
    return false;
@@ -78,7 +79,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nopt; i++) { 
     opcionesCheckbox1[i]=xmlDoc.getElementById("examen_004").getElementsByTagName('option')[i].innerHTML;
  }  
- ponerDatosCheckboxHtml(tituloCheckbox1,opcionesCheckbox1);
+ ponerDatosCheckboxHtml1(tituloCheckbox1,opcionesCheckbox1);
  var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox1[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
