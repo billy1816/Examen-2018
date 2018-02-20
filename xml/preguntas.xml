@@ -32,18 +32,6 @@
    
     </question>
  
-	  <question id="examen_004">
-	<type>multiple</type> 
-	<title>Quines d'aquestes criptomonedes han prevalescut damunt la resta? Pots seleccionar més de una:</title>
-	<option>Bitcoin</option>
- 	<option>Monero</option>
-	<option>Ripple</option>
-	<option>Bitcoin Cash</option>
- 		<answer>0</answare>
-		<answer>2</answare>
-			   
-    </question>
-	
  
 	
 </questions>
