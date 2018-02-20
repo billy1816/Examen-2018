@@ -31,6 +31,17 @@
 	<answer>1</answer>
    
     </question>
+	  <question id="examen_004">
+	<type>checkbox</type>
+	<title>Quines característiques té el Bitcoin?</title>
+	<option>Anonimitat</option>
+	<option>Transferències instantànies</option>
+	<option>Centralització econòmica</option>
+	<option>Transferències 100% gratuïtes</option>
+	<answer>0</answer>
+	<answer>1</answer>
+   
+    </question>
  
  
 	
