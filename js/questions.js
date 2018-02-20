@@ -71,14 +71,14 @@ function gestionarXml(dadesXml){
  }
   //CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
- var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].innerHTML;
+ var tituloCheckbox = xmlDoc.getElementsByTagName("title")[3].innerHTML;
  var opcionesCheckbox = [];
- var nopt = xmlDoc.getElementById("examen_003").getElementsByTagName('option').length;
+ var nopt = xmlDoc.getElementById("examen_004").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName('option')[i].innerHTML;
+    opcionesCheckbox[i]=xmlDoc.getElementById("examen_004").getElementsByTagName('option')[i].innerHTML;
  }  
  ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
- var nres = xmlDoc.getElementById("examen_003").getElementsByTagName('answer').length;
+ var nres = xmlDoc.getElementById("examen_004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox[i]=xmlDoc.getElementById("examen_003").getElementsByTagName("answer")[i].innerHTML;
  }
