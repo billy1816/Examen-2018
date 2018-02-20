@@ -174,7 +174,7 @@ function ponerDatosCheckboxHtml(t,opt){
  }  
 }
 
-function ponerDatosCheckboxHtml(t,opt){
+function ponerDatosCheckboxHtml1(t,opt){
  var checkboxContainer1=document.getElementById('checkboxDiv1');
  document.getElementById('tituloCheckbox1').innerHTML = t;
  for (i = 0; i < opt.length; i++) { 
