@@ -88,7 +88,7 @@ function gestionarXml(dadesXml){
  
  //Nom
  var tituloInput1=xmlDoc.getElementsByTagName("title")[4].innerHTML;
- ponerDatosInputHtml(tituloInput1);
+ ponerDatosInputHtml1(tituloInput1);
  nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
 }
 
