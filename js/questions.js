@@ -113,18 +113,7 @@ function corregirNumber(){
     else darRespuestaHtml("P1: Te has quedado corto");
   }
 }
-function corregirNombre(){
-  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
-  //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[4].value;     
-  if (s==nombreSecreto) {
-   darRespuestaHtml("P5: Correcte!");
-   nota +=1;
-  }
-  else {
-    darRespuestaHtml("P5: Incorrecte!");
-  }
-}
+
 
 function corregirSelect(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
@@ -182,7 +171,18 @@ function corregirCheckbox1(){
    } 
   }
 }
-
+function corregirNombre(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[4].value;     
+  if (s==nombreSecreto) {
+   darRespuestaHtml("P5: Correcte!");
+   nota +=1;
+  }
+  else {
+    darRespuestaHtml("P5: Incorrecte!");
+  }
+}
 //****************************************************************************************************
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
