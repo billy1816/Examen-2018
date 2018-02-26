@@ -258,10 +258,10 @@ function comprobar(){
    var f=formElement;
    var checked=false;
    for (i = 0; i < f.color.length; i++) {  //"color" es el nombre asignado a todos los checkbox
-      if (f.color[i].checked) checked[0]=true;
+      if (f.color[i].checked) checked=true;
    }
  for (i = 0; i < f.color1.length; i++) {  //"color" es el nombre asignado a todos los checkbox
-      if (f.color1[i].checked) checked[1]=true;
+      if (f.color1[i].checked) checked1=true;
    }
  
    if (f.elements[0].value=="") {
@@ -272,11 +272,11 @@ function comprobar(){
     f.elements[1].focus();
     alert("Selecciona una opción");
     return false;
-   } if (!checked[0]) {    
+   } if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
     alert("Selecciona una opción del checkbox");
     return false;
-    } if (!checked[1]) {    
+    } if (!checked1) {    
     document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opción del checkbox11");
     return false;
