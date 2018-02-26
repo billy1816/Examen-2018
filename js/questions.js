@@ -1,5 +1,6 @@
 var formElement=null;
 var numeroSecreto=null;
+var nombreSecreto=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
 var respuestasCheckbox1 = [];
@@ -84,6 +85,12 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox1[i]=xmlDoc.getElementById("examen_004").getElementsByTagName("answer")[i].innerHTML;
  }
+ 
+ //Nom
+ var tituloInput1=xmlDoc.getElementsByTagName("title")[4].innerHTML;
+ ponerDatosInputHtml(tituloInput1);
+ nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
+}
 
 }
 
@@ -146,7 +153,9 @@ function corregirCheckbox(){
 function ponerDatosInputHtml(t){
  document.getElementById("tituloInput").innerHTML = t;
 }
-
+function ponerDatosInputHtml1(t){
+ document.getElementById("tituloInput1").innerHTML = t;
+}
 function ponerDatosSelectHtml(t,opt){
   document.getElementById("tituloSelect").innerHTML=t;
   var select = document.getElementsByTagName("select")[0];
