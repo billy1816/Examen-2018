@@ -278,7 +278,7 @@ function comprobar(){
     return false;
     } if (!checked[1]) {    
     document.getElementsByTagName("h3")[3].focus();
-    alert("Selecciona una opción del checkbox");
+    alert("Selecciona una opción del checkbox11");
     return false;
    } else  return true;
 }
