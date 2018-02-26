@@ -269,6 +269,10 @@ function comprobar(){
     f.elements[0].focus();
     alert("Escriu un número");
     return false;
+   } else if (f.elements[4].value=="") {
+    f.elements[4].focus();
+    alert("Escriu un nom");
+    return false;
    } else if (f.elements[1].selectedIndex==0) {
     f.elements[1].focus();
     alert("Selecciona una opció");
