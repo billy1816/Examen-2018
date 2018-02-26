@@ -281,7 +281,7 @@ function comprobar(){
     document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opció del checkbox(2)");
     return false;
-    } if (f.elements[4].value=="") {
+    } else if (f.elements[4].value=="") {
     f.elements[4].focus();
     alert("Escriu un nom");
     return false;
