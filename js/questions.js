@@ -280,5 +280,6 @@ function comprobar(){
     document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opción del checkbox11");
     return false;
+     checked=true;
    } else  return true;
 }
