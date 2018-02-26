@@ -17,6 +17,7 @@ window.onload = function(){
    inicializar();
    if (comprobar()){
     corregirNumber();
+    corregirNombre();
     corregirSelect();
     corregirCheckbox();
     corregirCheckbox1();
@@ -112,6 +113,18 @@ function corregirNumber(){
     else darRespuestaHtml("P1: Te has quedado corto");
   }
 }
+function corregirNombre(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[4].value;     
+  if (s==nombreSecreto) {
+   darRespuestaHtml("P1: Correcte!");
+   nota +=1;
+  }
+  else {
+    darRespuestaHtml("P1: Incorrecte!");
+  }
+}
 
 function corregirSelect(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
@@ -143,6 +156,28 @@ function corregirCheckbox(){
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("P3: "+i+" incorrecta");
+    }   
+   } 
+  }
+}
+//Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
+function corregirCheckbox1(){
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta1 = [];
+  for (i = 0; i < f.color1.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+   if (f.color1[i].checked) {
+    escorrecta1[i]=false;     
+    for (j = 0; j < respuestasCheckbox1.length; j++) {
+     if (i==respuestasCheckbox1[j]) escorrecta1[i]=true;
+    }
+    //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+    if (escorrecta1[i]) {
+     nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P4: "+i+" correcta");    
+    } else {
+     nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P4: "+i+" incorrecta");
     }   
    } 
   }
@@ -191,10 +226,10 @@ function ponerDatosCheckboxHtml1(t,opt){
     var input = document.createElement("input");
     var label = document.createElement("label");
     label.innerHTML=opt[i];
-    label.setAttribute("for", "color_"+i);
+    label.setAttribute("for", "color1_"+i);
     input.type="checkbox";
-    input.name="color";
-    input.id="color_"+i;;    
+    input.name="color1";
+    input.id="color1_"+i;;    
     checkboxContainer1.appendChild(input);
     checkboxContainer1.appendChild(label);
     checkboxContainer1.appendChild(document.createElement("br"));
