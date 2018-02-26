@@ -118,11 +118,11 @@ function corregirNombre(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[4].value;     
   if (s==nombreSecreto) {
-   darRespuestaHtml("P1: Correcte!");
+   darRespuestaHtml("P5: Correcte!");
    nota +=1;
   }
   else {
-    darRespuestaHtml("P1: Incorrecte!");
+    darRespuestaHtml("P5: Incorrecte!");
   }
 }
 
@@ -245,7 +245,7 @@ function darRespuestaHtml(r){
 }
 
 function presentarNota(){
-   darRespuestaHtml("Nota: "+nota+" puntos sobre 3");
+   darRespuestaHtml("Nota: "+nota+" puntos sobre 5");
 }
 
 function inicializar(){
@@ -260,6 +260,10 @@ function comprobar(){
    for (i = 0; i < f.color.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color[i].checked) checked=true;
    }
+ for (i = 0; i < f.color1.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+      if (f.color1[i].checked) checked1=true;
+   }
+ 
    if (f.elements[0].value=="") {
     f.elements[0].focus();
     alert("Escribe un número");
@@ -270,6 +274,10 @@ function comprobar(){
     return false;
    } if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
+    alert("Selecciona una opción del checkbox");
+    return false;
+    } if (!checked1) {    
+    document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opción del checkbox");
     return false;
    } else  return true;
