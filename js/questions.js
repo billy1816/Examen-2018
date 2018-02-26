@@ -85,7 +85,10 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox1[i]=xmlDoc.getElementById("examen_004").getElementsByTagName("answer")[i].innerHTML;
  }
- 
+  //Nom
+ var tituloInput1=xmlDoc.getElementsByTagName("title")[4].innerHTML;
+ ponerDatosInputHtml1(tituloInput1);
+ nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
 
 }
 
