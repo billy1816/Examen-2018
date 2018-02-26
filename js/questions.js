@@ -267,19 +267,23 @@ function comprobar(){
  
    if (f.elements[0].value=="") {
     f.elements[0].focus();
-    alert("Escribe un número");
+    alert("Escriu un número");
     return false;
    } else if (f.elements[1].selectedIndex==0) {
     f.elements[1].focus();
-    alert("Selecciona una opción");
+    alert("Selecciona una opció");
     return false;
    } if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
-    alert("Selecciona una opción del checkbox");
+    alert("Selecciona una opció del checkbox");
     return false;
     } if (!checked1) {    
     document.getElementsByTagName("h3")[3].focus();
-    alert("Selecciona una opción del checkbox11");
+    alert("Selecciona una opció del checkbox(2)");
+    return false;
+    } else if (f.elements[4].value=="") {
+    f.elements[4].focus();
+    alert("Escriu un nom");
     return false;
     } else  return true;
 }
