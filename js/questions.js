@@ -92,7 +92,7 @@ function gestionarXml(dadesXml){
  nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
 }
 
-}
+
 
 
 
