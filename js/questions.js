@@ -4,7 +4,6 @@ var nombreSecreto=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
 var respuestasCheckbox1 = [];
-var respuestasCheckbox2 = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -286,9 +285,7 @@ function comprobar(){
  for (i = 0; i < f.color1.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color1[i].checked) checked1=true;
    }
- for (i = 0; i < f.color2.length; i++) {  //"color" es el nombre asignado a todos los checkbox
-      if (f.color2[i].checked) checked1=true;
-   }
+
  
    
     if (f.elements[4].value=="") {
@@ -306,10 +303,6 @@ function comprobar(){
     } if (!checked1) {    
     document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opció del checkbox(2)");
-    return false;
-    } if (!checked2) {    
-    document.getElementsByTagName("h3")[5].focus();
-    alert("Selecciona una opció del checkbox(3)");
     return false;
     } else  return true;
 }
