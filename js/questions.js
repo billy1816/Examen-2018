@@ -4,6 +4,7 @@ var nombreSecreto=null;
 var respuestaSelect=null;
 var respuestasCheckbox = [];
 var respuestasCheckbox1 = [];
+var respuestasCheckbox2 = [];
 var respuestasMultiple = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
@@ -21,6 +22,7 @@ window.onload = function(){
     corregirCheckbox();
     corregirCheckbox1();
     corregirNombre();
+    corregirCheckbox2();
     presentarNota();
    }
    return false;
@@ -91,11 +93,17 @@ function gestionarXml(dadesXml){
  ponerDatosInputHtml1(tituloInput1);
  nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
 
+
+
+//CHECKBOX1
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var tituloCheckbox2 = xmlDoc.getElementsByTagName("title")[5].innerHTML;
+ var opcionesCheckbox2 = [];
+ var nopt = xmlDoc.getElementById("examen_006").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesCheckbox1[i]=xmlDoc.getElementById("examen_006").getElementsByTagName('option')[i].innerHTML;
+ }  
 }
-
-
-
-
 
 //****************************************************************************************************
 //implementación de la corrección
@@ -109,8 +117,8 @@ function corregirNumber(){
    nota +=1;
   }
   else {
-    if (s>numeroSecreto) darRespuestaHtml("P1: Te has pasado");
-    else darRespuestaHtml("P1: Te has quedado corto");
+    if (s>numeroSecreto) darRespuestaHtml("Pregunta 1: T'has passat");
+    else darRespuestaHtml("Pregunta 1: T'has quedat curt");
   }
 }
 
@@ -121,10 +129,10 @@ function corregirSelect(){
   //luego comparar ese value con el value guardado en answer
   var sel = formElement.elements[1];  
   if (sel.selectedIndex-1==respuestaSelect) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("P2: Correcto");
+   darRespuestaHtml("P2: Correcte");
    nota +=1;
   }
-  else darRespuestaHtml("P2: Incorrecto");
+  else darRespuestaHtml("P2: Incorrecte");
 }
 
 //Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
@@ -141,10 +149,10 @@ function corregirCheckbox(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" correcta");    
+     darRespuestaHtml("P3: "+i+" Correcte");    
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" incorrecta");
+     darRespuestaHtml("P3: "+i+" Incorrecte");
     }   
    } 
   }
@@ -163,10 +171,10 @@ function corregirCheckbox1(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta1[i]) {
      nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" correcta");    
+     darRespuestaHtml("P4: "+i+" Correcte");    
     } else {
      nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" incorrecta");
+     darRespuestaHtml("P4: "+i+" Incorrecte");
     }   
    } 
   }
@@ -181,6 +189,27 @@ function corregirNombre(){
   }
   else {
     darRespuestaHtml("P5: Incorrecte!");
+  }
+}
+function corregirCheckbox2(){
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta2 = [];
+  for (i = 0; i < f.color2.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+   if (f.color2[i].checked) {
+    escorrecta2[i]=false;     
+    for (j = 0; j < respuestasCheckbox2.length; j++) {
+     if (i==respuestasCheckbox2[j]) escorrecta2[i]=true;
+    }
+    //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+    if (escorrecta2[i]) {
+     nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P4: "+i+" Correcte");    
+    } else {
+     nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P4: "+i+" Incorrecte");
+    }   
+   } 
   }
 }
 //****************************************************************************************************
@@ -235,6 +264,22 @@ function ponerDatosCheckboxHtml1(t,opt){
     checkboxContainer1.appendChild(document.createElement("br"));
  }  
 }
+function ponerDatosCheckboxHtml2(t,opt){
+ var checkboxContainer2=document.getElementById('checkboxDiv2');
+ document.getElementById('tituloCheckbox2').innerHTML = t;
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color2_"+i);
+    input.type="checkbox";
+    input.name="color2";
+    input.id="color2_"+i;;    
+    checkboxContainer2.appendChild(input);
+    checkboxContainer2.appendChild(label);
+    checkboxContainer2.appendChild(document.createElement("br"));
+ }  
+}
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
 function darRespuestaHtml(r){
@@ -258,11 +303,15 @@ function comprobar(){
    var f=formElement;
    var checked=false;
    var checked1=false;
+   var checked2=false;
    for (i = 0; i < f.color.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color[i].checked) checked=true;
    }
  for (i = 0; i < f.color1.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color1[i].checked) checked1=true;
+   }
+ for (i = 0; i < f.color2.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+      if (f.color2[i].checked) checked1=true;
    }
  
    
@@ -282,9 +331,9 @@ function comprobar(){
     document.getElementsByTagName("h3")[3].focus();
     alert("Selecciona una opció del checkbox(2)");
     return false;
-    } else if (f.elements[4].value=="1") {
-    f.elements[4].focus();
-    alert("Escriu un nom");
+    } if (!checked2) {    
+    document.getElementsByTagName("h3")[5].focus();
+    alert("Selecciona una opció del checkbox(3)");
     return false;
     } else  return true;
 }
