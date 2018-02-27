@@ -103,7 +103,7 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nopt; i++) { 
     opcionesCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName('option')[i].innerHTML;
  }  
-}
+
 
 //****************************************************************************************************
 //implementación de la corrección
