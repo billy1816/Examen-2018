@@ -190,7 +190,7 @@ function corregirNombre(){
   else {
     darRespuestaHtml("P5: Incorrecte!");
   }
-}
+
 function corregirCheckbox2(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
   var f=formElement;
