@@ -93,10 +93,6 @@ function gestionarXml(dadesXml){
  ponerDatosInputHtml1(tituloInput1);
  nombreSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[4].innerHTML);
 
-
-
-
-
 }
 //****************************************************************************************************
 //implementación de la corrección
