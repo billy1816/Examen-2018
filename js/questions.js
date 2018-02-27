@@ -101,7 +101,7 @@ function gestionarXml(dadesXml){
  var opcionesCheckbox2 = [];
  var nopt = xmlDoc.getElementById("examen_006").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox1[i]=xmlDoc.getElementById("examen_006").getElementsByTagName('option')[i].innerHTML;
+    opcionesCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName('option')[i].innerHTML;
  }  
 }
 
