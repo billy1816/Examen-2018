@@ -39,16 +39,7 @@
 	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
  	<answer>satoshi nakamoto</answer>
     </question>
-    <question id="examen_006">
-	<<type>checkbox</type>
-	<title>Quin pais va tenir major problemes per aceptar les criptomonedes?</title>
-	<option>Espanya</option>
-	<option>Corea del Sud</option>
-	<option>Xina</option>
-	<option>França</option>
-	<answer>3</answer>
-	<answer>4</answer>
-    </question>
+   
     
  
 	
