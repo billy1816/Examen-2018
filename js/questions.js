@@ -212,6 +212,7 @@ function corregirCheckbox2(){
    } 
   }
 }
+}
 //****************************************************************************************************
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
