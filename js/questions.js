@@ -103,8 +103,13 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nopt; i++) { 
     opcionesCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName('option')[i].innerHTML;
  }  
+ ponerDatosCheckboxHtml2(tituloCheckbox2,opcionesCheckbox2);
+ var nres = xmlDoc.getElementById("examen_006").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName("answer")[i].innerHTML;
+ }
 
-
+}
 //****************************************************************************************************
 //implementación de la corrección
 
