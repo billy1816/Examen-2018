@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE questions>
-
 <questions>
     <question id="examen_001">
 	<type>number</type>
@@ -15,12 +13,8 @@
  	<option>BTC</option>
  	<option>Satoshi</option>
 	<answer>3</answer>
-    </question>
-
-    
-
-
-     <question id="examen_003">
+    </question>  
+    <question id="examen_003">
 	<type>checkbox</type>
 	<title>Quines característiques té el Bitcoin?</title>
 	<option>Anonimitat</option>
@@ -29,9 +23,8 @@
 	<option>Transferències 100% gratuïtes</option>
 	<answer>0</answer>
 	<answer>1</answer>
-   
     </question>
-	  <question id="examen_004">
+    <question id="examen_004">
 	<type>checkbox</type>
 	<title>Quines d'aquestes criptomonedes són anònimes?</title>
 	<option>Monero</option>
@@ -40,9 +33,41 @@
 	<option>Bitcoin Cash</option>
 	<answer>0</answer>
 	<answer>2</answer>
-   
     </question>
     <question id="examen_005">
+	<type>text</type>
+	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
+ 	<answer>satoshi nakamoto</answer>
+    </question>
+    <question id="examen_006">
+	<<type>checkbox</type>
+	<title>Quin pais va tenir major problemes per aceptar les criptomonedes?</title>
+	<option>Espanya</option>
+	<option>Corea del Sud</option>
+	<option>Xina</option>
+	<option>França</option>
+	<answer>3</answer>
+	<answer>4</answer>
+    </question>
+    <question id="examen_007">
+	<type>text</type>
+	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
+ 	<answer>satoshi nakamoto</answer>
+    </question>
+ 
+	<question id="examen_085">
+	<type>text</type>
+	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
+ 	<answer>satoshi nakamoto</answer>
+    </question>
+ 
+	<question id="examen_009">
+	<type>text</type>
+	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
+ 	<answer>satoshi nakamoto</answer>
+    </question>
+ 
+	<question id="examen_010">
 	<type>text</type>
 	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
  	<answer>satoshi nakamoto</answer>
