@@ -265,11 +265,8 @@ function comprobar(){
       if (f.color1[i].checked) checked1=true;
    }
  
-   if (f.elements[0].value=="") {
-    f.elements[0].focus();
-    alert("Escriu un número");
-    return false;
-   } else if (f.elements[4].value=="") {
+   
+    if (f.elements[4].value=="") {
     f.elements[4].focus();
     alert("Escriu un nom");
     return false;
