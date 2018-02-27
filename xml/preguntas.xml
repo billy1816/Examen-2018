@@ -41,13 +41,13 @@
     </question>
 	 <question id="examen_006">
 	<type>checkbox</type>
-	<title>Quines d'aquestes criptomonedes són anònimes?</title>
-	<option>Monero</option>
-	<option>Litecoin</option>
-	<option>Zcash</option>
-	<option>Bitcoin Cash</option>
-	<answer>0</answer>
-	<answer>2</answer>
+	<title>Quins paisos varen tenir major problemes per aceptar les criptomonedes?</title>
+	<option>Espanya</option>
+	<option>Corea del Sud</option>
+	<option>Xina</option>
+	<option>França</option>
+	<answer>3</answer>
+	<answer>4</answer>
     </question>
    
     
