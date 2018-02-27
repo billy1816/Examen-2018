@@ -49,29 +49,7 @@
 	<answer>3</answer>
 	<answer>4</answer>
     </question>
-    <question id="examen_007">
-	<type>text</type>
-	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
- 	<answer>satoshi nakamoto</answer>
-    </question>
- 
-	<question id="examen_085">
-	<type>text</type>
-	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
- 	<answer>satoshi nakamoto</answer>
-    </question>
- 
-	<question id="examen_009">
-	<type>text</type>
-	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
- 	<answer>satoshi nakamoto</answer>
-    </question>
- 
-	<question id="examen_010">
-	<type>text</type>
-	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
- 	<answer>satoshi nakamoto</answer>
-    </question>
+    
  
 	
 </questions>
