@@ -187,7 +187,7 @@ function corregirCheckbox1(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta1[i]) {
      nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 4: opció "+i+" Correcte");    
+     darRespuestaHtml("Pregunta 4: opció "+i+" Correcte!");    
     } else {
      nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 4: opció "+i+" Incorrecte");
@@ -220,7 +220,7 @@ function corregirCheckbox2(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta2[i]) {
      nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte");    
+     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte!");    
     } else {
      nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 6: opció "+i+" Incorrecte");
@@ -232,7 +232,7 @@ function corregirSelect1(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
   //para implementarlo con type radio, usar value para enumerar las opciones <input type='radio' value='1'>...
   //luego comparar ese value con el value guardado en answer
-  var sel1 = formElement.elements[16];  
+  var sel1 = formElement.elements[15];  
   if (sel1.selectedIndex-1==respuestaSelect1) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
    darRespuestaHtml("Pregunta 7: Correcte!");
    nota +=1;
