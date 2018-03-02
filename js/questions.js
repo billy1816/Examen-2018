@@ -35,6 +35,7 @@ window.onload = function(){
  xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
    gestionarXml(this);
+   
   }
  };
  xhttp.open("GET", "xml/preguntas.xml", true);
@@ -108,10 +109,10 @@ function gestionarXml(dadesXml){
  for (i = 0; i < nres; i++) { 
   respuestasCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName("answer")[i].innerHTML;
  }
-}
+
 //SELECT1
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloSelect1=xmlDoc.getElementsByTagName("title")[6].innerHTML;
+ var tituloSelect1 = xmlDoc.getElementsByTagName("title")[6].innerHTML;
  var opcionesSelect1 = [];
  var nopt = xmlDoc.getElementById("examen_007").getElementsByTagName('option').length;
   for (i = 0; i < nopt; i++) { 
@@ -119,6 +120,7 @@ function gestionarXml(dadesXml){
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
  respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[9].innerHTML);
+}
 //****************************************************************************************************
 //implementación de la corrección
 
