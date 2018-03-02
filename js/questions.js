@@ -184,13 +184,13 @@ function corregirCheckbox1(){
 function corregirNombre(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s1 =  tituloInput1.getElementsByTagName("input")[0].value;
-  if (s1.toUpperCase()==nombreSecreto.toUpperCase()) {
-   darRespuestaHtml("P5: Correcte!");
+  var s=formElement.elements[4].value;     
+  if (s==nombreSecreto) {
+   darRespuestaHtml("Pregunta 1: Exacte!");
    nota +=1;
   }
   else {
-    darRespuestaHtml("P5: Incorrecte!");
+    darRespuestaHtml("Pregunta 1: T'has quedat curt");
   }
 }
 function corregirCheckbox2(){
