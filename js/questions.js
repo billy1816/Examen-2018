@@ -265,7 +265,7 @@ function ponerDatosSelectHtml1(t,opt){
     var option = document.createElement("option");
     option.text = opt[i];
     option.value=i+1;
-    select.options.add(option);
+    select1.options.add(option);
  }  
 }
 function ponerDatosCheckboxHtml(t,opt){
