@@ -91,7 +91,7 @@ function gestionarXml(dadesXml){
   //Nom
  var tituloInput1=xmlDoc.getElementsByTagName("title")[4].innerHTML;
  ponerDatosInputHtml1(tituloInput1);
- nombreSecreto=xmlDoc.getElementsByTagName("answer")[4].innerHTML;
+ nombreSecreto = xmlDoc.getElementsByTagName("answer")[4].innerHTML.toUpperCase();
 
  //CHECKBOX2
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
@@ -184,8 +184,8 @@ function corregirCheckbox1(){
 function corregirNombre(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s1="A" 
-  if (s1==nombreSecreto) {
+  var s1 =  document.getElementById("text").getElementsByTagName("input")[0].value;
+  if (s1.toUpperCase()==nombreSecreto.toUpperCase()) {
    darRespuestaHtml("P5: Correcte!");
    nota +=1;
   }
