@@ -37,7 +37,7 @@
     <question id="examen_005">
 	<type>text</type>
 	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
- 	<answer>"A"</answer>
+ 	<answer>"Satoshi Nakamoto"</answer>
     </question>
 	 <question id="examen_006">
 	<type>checkbox</type>
