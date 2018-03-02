@@ -115,7 +115,7 @@ function corregirNumber(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[0].value;     
   if (s==numeroSecreto) {
-   darRespuestaHtml("Pregunta 1: Exacte!");
+   darRespuestaHtml("Pregunta 1: Correcte!");
    nota +=1;
   }
   else {
@@ -131,7 +131,7 @@ function corregirSelect(){
   //luego comparar ese value con el value guardado en answer
   var sel = formElement.elements[1];  
   if (sel.selectedIndex-1==respuestaSelect) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("Pregunta 2: Correcte");
+   darRespuestaHtml("Pregunta 2: Correcte!");
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 2: Incorrecte");
@@ -151,10 +151,10 @@ function corregirCheckbox(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" Correcte");    
+     darRespuestaHtml("Pregunta 3: opció "+i+" Correcte!");    
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P3: "+i+" Incorrecte");
+     darRespuestaHtml("Pregunta 3: opció "+i+" Incorrecte");
     }   
    } 
   }
@@ -173,10 +173,10 @@ function corregirCheckbox1(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta1[i]) {
      nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" Correcte");    
+     darRespuestaHtml(("Pregunta 4: opció "+i+" Correcte");    
     } else {
      nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P4: "+i+" Incorrecte");
+     darRespuestaHtml(("Pregunta 4: opció "+i+" Incorrecte");
     }   
    } 
   }
@@ -186,11 +186,11 @@ function corregirNombre(){
   //en este ejemplo hace una comparación de números enteros
   var s1= formElement.elements[10].value; 
   if (s1==nombreSecreto) {
-   darRespuestaHtml("Pregunta 1: Exacte!");
+   darRespuestaHtml("Pregunta 5: Correcte!");
    nota +=1;
   }
   else {
-    darRespuestaHtml("Pregunta 1: T'has quedat curt");
+    darRespuestaHtml("Pregunta 5: Incorrecte");
   }
 }
 function corregirCheckbox2(){
@@ -206,10 +206,10 @@ function corregirCheckbox2(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta2[i]) {
      nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P6: "+i+" Correcte");    
+     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte");    
     } else {
      nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("P6: "+i+" Incorrecte");
+     darRespuestaHtml("Pregunta 6: opció "+i+" Incorrecte");
     }   
    } 
   }
