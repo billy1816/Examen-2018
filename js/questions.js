@@ -2,6 +2,7 @@ var formElement=null;
 var numeroSecreto=null;
 var nombreSecreto=null;
 var respuestaSelect=null;
+var respuestaSelect1=null;
 var respuestasCheckbox = [];
 var respuestasCheckbox1 = [];
 var respuestasCheckbox2 = [];
@@ -23,6 +24,7 @@ window.onload = function(){
     corregirCheckbox1();
     corregirNombre();
     corregirCheckbox2();
+    corregirSelect1();
     presentarNota();
    }
    return false;
@@ -107,6 +109,16 @@ function gestionarXml(dadesXml){
   respuestasCheckbox2[i]=xmlDoc.getElementById("examen_006").getElementsByTagName("answer")[i].innerHTML;
  }
 }
+//SELECT1
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloSelect1=xmlDoc.getElementsByTagName("title")[6].innerHTML;
+ var opcionesSelect1 = [];
+ var nopt = xmlDoc.getElementById("examen_007").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
+    opcionesSelect1[i] = xmlDoc.getElementById("examen_007").getElementsByTagName('option')[i].innerHTML;
+ }
+ ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
+ respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[9].innerHTML);
 //****************************************************************************************************
 //implementación de la corrección
 
@@ -214,6 +226,17 @@ function corregirCheckbox2(){
    } 
   }
 }
+function corregirSelect1(){
+  //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
+  //para implementarlo con type radio, usar value para enumerar las opciones <input type='radio' value='1'>...
+  //luego comparar ese value con el value guardado en answer
+  var sel1 = formElement.elements[16];  
+  if (sel1.selectedIndex-1==respuestaSelect1) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
+   darRespuestaHtml("Pregunta 7: Correcte!");
+   nota +=1;
+  }
+  else darRespuestaHtml("Pregunta 7: Incorrecte");
+}
 
 //****************************************************************************************************
 // poner los datos recibios en el HTML
@@ -225,7 +248,7 @@ function ponerDatosInputHtml1(t){
 }
 function ponerDatosSelectHtml(t,opt){
   document.getElementById("tituloSelect").innerHTML=t;
-  var select = document.getElementsByTagName("select")[0];
+  var select1 = document.getElementsByTagName("select")[1];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
@@ -233,7 +256,16 @@ function ponerDatosSelectHtml(t,opt){
     select.options.add(option);
  }  
 }
-
+function ponerDatosSelectHtml1(t,opt){
+  document.getElementById("tituloSelect1").innerHTML=t;
+  var select1 = document.getElementsByTagName("select")[0];
+  for (i = 0; i < opt.length; i++) { 
+    var option = document.createElement("option");
+    option.text = opt[i];
+    option.value=i+1;
+    select.options.add(option);
+ }  
+}
 function ponerDatosCheckboxHtml(t,opt){
  var checkboxContainer=document.getElementById('checkboxDiv');
  document.getElementById('tituloCheckbox').innerHTML = t;
@@ -327,7 +359,11 @@ function comprobar(){
     f.elements[1].focus();
     alert("Selecciona una opció");
     return false;
-   } if (!checked) {    
+   } else if (f.elements[16].selectedIndex==0) {
+    f.elements[1].focus();
+    alert("Selecciona una opció");
+    return false; 
+ if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
     alert("Selecciona una opció del checkbox");
     return false;
