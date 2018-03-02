@@ -363,7 +363,7 @@ function comprobar(){
     f.elements[1].focus();
     alert("Selecciona una opció");
     return false; 
- if (!checked) {    
+   } if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
     alert("Selecciona una opció del checkbox");
     return false;
