@@ -185,7 +185,7 @@ function corregirNombre(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
   var s1=formElement.elements[4].value;  
-  if (s1=="nombreSecreto") {
+  if (s1==nombreSecreto) {
    darRespuestaHtml("P5: Correcte!");
    nota +=1;
   }
