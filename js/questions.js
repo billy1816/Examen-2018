@@ -173,10 +173,10 @@ function corregirCheckbox1(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta1[i]) {
      nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml(("Pregunta 4: opció "+i+" Correcte");    
+     darRespuestaHtml("Pregunta 4: opció "+i+" Correcte");    
     } else {
      nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml(("Pregunta 4: opció "+i+" Incorrecte");
+     darRespuestaHtml("Pregunta 4: opció "+i+" Incorrecte");
     }   
    } 
   }
