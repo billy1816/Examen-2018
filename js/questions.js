@@ -250,7 +250,7 @@ function ponerDatosInputHtml1(t){
 }
 function ponerDatosSelectHtml(t,opt){
   document.getElementById("tituloSelect").innerHTML=t;
-  var select1 = document.getElementsByTagName("select")[1];
+  var select = document.getElementsByTagName("select")[0];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
@@ -260,7 +260,7 @@ function ponerDatosSelectHtml(t,opt){
 }
 function ponerDatosSelectHtml1(t,opt){
   document.getElementById("tituloSelect1").innerHTML=t;
-  var select1 = document.getElementsByTagName("select")[0];
+  var select1 = document.getElementsByTagName("select")[1];
   for (i = 0; i < opt.length; i++) { 
     var option = document.createElement("option");
     option.text = opt[i];
