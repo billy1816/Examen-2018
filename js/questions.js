@@ -190,6 +190,27 @@ function corregirNombre(){
     darRespuestaHtml("P5: Incorrecte!");
   }
 }
+function corregirCheckbox2(){
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta2 = [];
+  for (i = 0; i < f.color2.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+   if (f.color2[i].checked) {
+    escorrecta2[i]=false;     
+    for (j = 0; j < respuestasCheckbox2.length; j++) {
+     if (i==respuestasCheckbox2[j]) escorrecta2[i]=true;
+    }
+    //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+    if (escorrecta2[i]) {
+     nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P6: "+i+" Correcte");    
+    } else {
+     nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("P6: "+i+" Incorrecte");
+    }   
+   } 
+  }
+}
 
 //****************************************************************************************************
 // poner los datos recibios en el HTML
