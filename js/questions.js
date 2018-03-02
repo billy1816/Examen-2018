@@ -91,8 +91,9 @@ function gestionarXml(dadesXml){
   //Nom
  var tituloInput1=xmlDoc.getElementsByTagName("title")[4].innerHTML;
  ponerDatosInputHtml1(tituloInput1);
- nombreSecreto= xmlDoc.getElementById("examen_005").getElementsByTagName("answer").innerHTML.toUpperCase();
-//CHECKBOX2
+ nombreSecreto= xmlDoc.getElementById("examen_005").getElementsByTagName("answer").innerHTML;
+
+ //CHECKBOX2
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var tituloCheckbox2 = xmlDoc.getElementsByTagName("title")[5].innerHTML;
  var opcionesCheckbox2 = [];
