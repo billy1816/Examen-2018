@@ -361,9 +361,9 @@ function comprobar(){
     f.elements[1].focus();
     alert("Selecciona una opció");
     return false;
-   } else if (f.elements[16].selectedIndex==0) {
+   } else if (f.elements[15].selectedIndex==0) {
     f.elements[1].focus();
-    alert("Selecciona una opció");
+    alert("Selecciona una opció (2)");
     return false; 
    } if (!checked) {    
     document.getElementsByTagName("h3")[2].focus();
