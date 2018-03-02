@@ -184,7 +184,7 @@ function corregirCheckbox1(){
 function corregirNombre(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s1= xmlDoc.getElementById("text").getElementsByTagName("input")[0].innerHTML;
+  var s1= formElement.elements[10].value; 
   if (s1==nombreSecreto) {
    darRespuestaHtml("Pregunta 1: Exacte!");
    nota +=1;
