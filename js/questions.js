@@ -21,6 +21,7 @@ window.onload = function(){
     corregirCheckbox();
     corregirCheckbox1();
     corregirNombre();
+    corregirCheckbox2();
     presentarNota();
    }
    return false;
@@ -112,7 +113,7 @@ function corregirNumber(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[0].value;     
   if (s==numeroSecreto) {
-   darRespuestaHtml("P1: Exacto!");
+   darRespuestaHtml("Pregunta 1: Exacte!");
    nota +=1;
   }
   else {
@@ -128,10 +129,10 @@ function corregirSelect(){
   //luego comparar ese value con el value guardado en answer
   var sel = formElement.elements[1];  
   if (sel.selectedIndex-1==respuestaSelect) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("P2: Correcte");
+   darRespuestaHtml("Pregunta 2: Correcte");
    nota +=1;
   }
-  else darRespuestaHtml("P2: Incorrecte");
+  else darRespuestaHtml("Pregunta 2: Incorrecte");
 }
 
 //Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
@@ -290,7 +291,7 @@ function darRespuestaHtml(r){
 }
 
 function presentarNota(){
-   darRespuestaHtml("Nota: "+nota+" puntos sobre 5");
+   darRespuestaHtml("Nota: "+nota+" puntos sobre 6");
 }
 
 function inicializar(){
