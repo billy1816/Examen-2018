@@ -1,7 +1,63 @@
-body,html{margin:0px}
-body{width:96%;padding-left:2%;padding-right:2%}
-body,input,select,label{font-size:5vw}
-h3{font-size:7vw}
-input,select{width:80%}
-input[type=checkbox]{width:5%;zoom:1.5}
-form{background-color:aliceblue;padding:1%}
+body,html{
+	margin:0px;
+	overflow-x:hidden;
+
+}
+
+h1{
+		
+	text-align: center;
+}
+body{
+    height: 100%;	
+	text-align: center;
+		padding-left:15%;
+	padding-right:15%;
+background-color:white;}
+body,input,select,label{
+	font-size:1vw
+}
+h3{
+	font-size:1.5vw
+}
+
+
+
+input[type=checkbox]{width:2%;zoom:1.5}
+body{background-image:url(../img/fondo1.jpg); 
+	background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	padding:5%}	
+
+h1{
+	padding-bottom: 5px;
+}
+form,h1{
+	margin-right:50%;
+	position: relative;
+	left:  0%;
+	text-align:left;
+	color:#FFFFCC;
+}
+
+#resultadosDiv{
+	display:none;
+    width: auto;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 2px solid gray;
+    margin: 0;
+    color: white;
+    margin-top: 5%;
+    margin-right:70%;
+    text-align:left;
+}
+p{
+	white-space:nowrap;
+}
+	
