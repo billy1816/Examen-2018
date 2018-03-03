@@ -14,14 +14,14 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
- function () {
-        document.getElementById("resultadosDiv").style.display = "block";       
-    };
+ mostrar=document.getElementById("resultadosDiv").style.display = "block";       
+
  //CORREGIR al apretar el botón
  formElement=document.getElementById('myform');
  formElement.onsubmit=function(){
    inicializar();
    if (comprobar()){
+    mostrar();
     corregirNumber();
     corregirSelect();
     corregirCheckbox();
