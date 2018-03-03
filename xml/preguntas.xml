@@ -20,9 +20,9 @@
 	<option>Anonimitat simple</option>
 	<option>Transferències instantànies</option>
 	<option>Centralització econòmica</option>
-	<option>Transferències 100% gratuïtes</option>
+	<option>Transferències quasi gratuïtes</option>
 	<answer>0</answer>
-	<answer>1</answer>
+	<answer>3</answer>
     </question>
     <question id="examen_004">
 	<type>checkbox</type>
