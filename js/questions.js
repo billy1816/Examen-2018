@@ -7,7 +7,7 @@ var respuestaSelect1=null;
 var respuestasCheckbox = [];
 var respuestasCheckbox1 = [];
 var respuestasCheckbox2 = [];
-var respuestasMultiple = [];
+var respuestasCheckbox3 = [];
 var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
 //**************************************************************************************************** 
@@ -26,7 +26,8 @@ window.onload = function(){
     corregirNombre();
     corregirCheckbox2();
     corregirSelect1();
-     corregirNumber1();
+    corregirNumber1();
+    corregirCheckbox3();
     presentarNota();
    }
    return false;
@@ -128,6 +129,20 @@ function gestionarXml(dadesXml){
  var tituloInput2=xmlDoc.getElementsByTagName("title")[7].innerHTML;
  ponerDatosInputHtml2(tituloInput2);
  numeroSecreto1=parseInt(xmlDoc.getElementsByTagName("answer")[10].innerHTML);
+
+ //CHECKBOX3
+ //Recuperamos el título y las opciones, guardamos las respuestas correctas
+ var tituloCheckbox3 = xmlDoc.getElementsByTagName("title")[8].innerHTML;
+ var opcionesCheckbox3 = [];
+ var nopt = xmlDoc.getElementById("examen_009").getElementsByTagName('option').length;
+ for (i = 0; i < nopt; i++) { 
+    opcionesCheckbox3[i]=xmlDoc.getElementById("examen_009").getElementsByTagName('option')[i].innerHTML;
+ }  
+ ponerDatosCheckboxHtml3(tituloCheckbox3,opcionesCheckbox3);
+ var nres = xmlDoc.getElementById("examen_009").getElementsByTagName('answer').length;
+ for (i = 0; i < nres; i++) { 
+  respuestasCheckbox3[i]=xmlDoc.getElementById("examen_009").getElementsByTagName("answer")[i].innerHTML;
+ }
 }
 //****************************************************************************************************
 //implementación de la corrección
@@ -259,7 +274,27 @@ function corregirSelect1(){
   }
   else darRespuestaHtml("Pregunta 7: Incorrecte");
 }
-
+function corregirCheckbox3(){
+  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+  var f=formElement;
+  var escorrecta3 = [];
+  for (i = 0; i < f.color3.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+   if (f.color3[i].checked) {
+    escorrecta3[i]=false;     
+    for (j = 0; j < respuestasCheckbox3.length; j++) {
+     if (i==respuestasCheckbox3[j]) escorrecta3[i]=true;
+    }
+    //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+    if (escorrecta3[i]) {
+     nota +=1.0/respuestasCheckbox3.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("Pregunta 9: opció "+i+" Correcte!");    
+    } else {
+     nota -=1.0/respuestasCheckbox3.length;  //dividido por el número de respuestas correctas   
+     darRespuestaHtml("Pregunta 9: opció "+i+" Incorrecte");
+    }   
+   } 
+  }
+}
 //****************************************************************************************************
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
@@ -340,6 +375,22 @@ function ponerDatosCheckboxHtml1(t,opt){
     checkboxContainer2.appendChild(document.createElement("br"));
  }  
 }
+function ponerDatosCheckboxHtml3(t,opt){
+ var checkboxContainer3=document.getElementById('checkboxDiv3');
+ document.getElementById('tituloCheckbox3').innerHTML = t;
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color3_"+i);
+    input.type="checkbox";
+    input.name="color3";
+    input.id="color3_"+i;;    
+    checkboxContainer3.appendChild(input);
+    checkboxContainer3.appendChild(label);
+    checkboxContainer3.appendChild(document.createElement("br"));
+ }  
+}
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
 function darRespuestaHtml(r){
@@ -364,6 +415,7 @@ function comprobar(){
    var checked=false;
    var checked1=false;
    var checked2=false;
+   var checked3=false;
    for (i = 0; i < f.color.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color[i].checked) checked=true;
    }
@@ -373,7 +425,9 @@ function comprobar(){
   for (i = 0; i < f.color2.length; i++) {  //"color" es el nombre asignado a todos los checkbox
       if (f.color2[i].checked) checked2=true;
    }
-
+   for (i = 0; i < f.color3.length; i++) {  //"color" es el nombre asignado a todos los checkbox
+      if (f.color3[i].checked) checked3=true;
+   }
  
    
     if (f.elements[4].value=="") {
@@ -399,6 +453,10 @@ function comprobar(){
     } if (!checked2) {    
     document.getElementsByTagName("h3")[5].focus();
     alert("Selecciona una opció del checkbox(3)");
+    return false;
+    } if (!checked3) {
+    document.getElementsByTagName("h3")[8].focus();
+    alert("Selecciona una opció del checkbox(4)");
     return false;
     } else  return true;
 }
