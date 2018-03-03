@@ -20,14 +20,23 @@ h3{
 	font-size:1.5vw
 }
 
-#sel1, #multiple, #text1, #checkbox1, #examen{
-	
-}
+
 
 input[type=checkbox]{width:2%;zoom:1.5}
-form{background-color:#E7F9A4;
+body{background-image:url(../img/fondo1.jpg); 
+	background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 	padding:5%}	
 
 h1{
 	padding-bottom: 50px;
+}
+form,h1{
+	position: relative;
+	left:  -20%;
+}
+h1{
+	color:#FFFFCC;
 }
