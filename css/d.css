@@ -35,7 +35,8 @@ h1{
 }
 form,h1{
 	position: relative;
-	left:  -25%;
+	left:  0%;
+	text-align:left;
 	color:#FFFFCC;
 }
 
