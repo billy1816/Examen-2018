@@ -375,7 +375,22 @@ function ponerDatosCheckboxHtml1(t,opt){
     checkboxContainer2.appendChild(document.createElement("br"));
  }  
 }
-
+function ponerDatosCheckboxHtml3(t,opt){
+ var checkboxContainer3=document.getElementById('checkboxDiv3');
+ document.getElementById('tituloCheckbox3').innerHTML = t;
+ for (i = 0; i < opt.length; i++) { 
+    var input = document.createElement("input");
+    var label = document.createElement("label");
+    label.innerHTML=opt[i];
+    label.setAttribute("for", "color3_"+i);
+    input.type="checkbox";
+    input.name="color3";
+    input.id="color3_"+i;;    
+    checkboxContainer3.appendChild(input);
+    checkboxContainer3.appendChild(label);
+    checkboxContainer3.appendChild(document.createElement("br"));
+ }  
+}
 //****************************************************************************************************
 //Gestionar la presentación de las respuestas
 function darRespuestaHtml(r){
