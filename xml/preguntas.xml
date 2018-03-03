@@ -3,11 +3,11 @@
 <questions>
     <question id="examen_001">
 	<type>number</type>
-	<title>A quin preu màxim ha arribat el bitcoin, en dòlars?</title>
+	<title>1. A quin preu màxim ha arribat el bitcoin, en dòlars?</title>
  	<answer>20000</answer>
     </question>
     <question id="examen_002">
-	<title>Quina es la unitat més petita del Bitcoin</title>
+	<title>2. Quina es la unitat més petita del Bitcoin</title>
 	<option>mBTC</option>
  	<option>μBTC</option>
  	<option>BTC</option>
@@ -16,7 +16,7 @@
     </question>  
     <question id="examen_003">
 	<type>checkbox</type>
-	<title>Quines característiques té el Bitcoin?</title>
+	<title>3. Quines característiques té el Bitcoin?</title>
 	<option>Anonimitat simple</option>
 	<option>Transferències instantànies</option>
 	<option>Centralització econòmica</option>
@@ -26,7 +26,7 @@
     </question>
     <question id="examen_004">
 	<type>checkbox</type>
-	<title>Quines d'aquestes criptomonedes són més irrastrejables que el Bitcoin?</title>
+	<title>4. Quines d'aquestes criptomonedes són més irrastrejables que el Bitcoin?</title>
 	<option>Monero</option>
 	<option>Litecoin</option>
 	<option>Zcash</option>
@@ -36,12 +36,12 @@
     </question>
     <question id="examen_005">
 	<type>text</type>
-	<title>Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
+	<title>5. Quin va ser el nick amb el que es va presentar el creador del bitcoin?</title>
  	<answer>Satoshi Nakamoto</answer>
     </question>
 	 <question id="examen_006">
 	<type>checkbox</type>
-	<title>Quins paisos varen tenir major problemes per aceptar les criptomonedes?</title>
+	<title>6. Quins paisos varen tenir major problemes per aceptar les criptomonedes?</title>
 	<option>Espanya</option>
 	<option>Corea del Sud</option>
 	<option>Xina</option>
@@ -50,7 +50,7 @@
 	<answer>3</answer>
     </question>
    <question id="examen_007">
-	<title>Quin algoritme és utilitzat per el Bitcoin?</title>
+	<title>7. Quin algoritme és utilitzat per el Bitcoin?</title>
 	<option>SHA-256</option>
  	<option>Scrypt</option>
  	<option>X11</option>
@@ -59,12 +59,12 @@
     </question>  
    <question id="examen_008">
 	<type>number</type>
-	<title>La primera compra real amb bitcoins va ser de dues pizzes, quan es va gastar?</title>
+	<title>8. La primera compra real amb bitcoins va ser de dues pizzes, quan es va gastar?</title>
  	<answer>10000</answer>
 	</question>
  <question id="examen_009">
 	<type>checkbox</type>
-	<title>A quin any es va crear el Bitcoin?</title>
+	<title>9. A quin any es va crear el Bitcoin?</title>
 	<option>1998</option>
 	<option>2009</option>
 	<option>2011</option>
@@ -72,7 +72,7 @@
 	<answer>1</answer>
     </question>
 	<question id="examen_010">
-	<title>Quin és el tamany màxim d'un bloc dins la cadena de blocs del bitcoin?</title>
+	<title>10. Quin és el tamany màxim d'un bloc dins la cadena de blocs del bitcoin?</title>
 	<option>2MB</option>
  	<option>1MB</option>
  	<option>8MB</option>
