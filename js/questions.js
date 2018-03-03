@@ -21,7 +21,7 @@ window.onload = function(){
  formElement.onsubmit=function(){
    inicializar();
    if (comprobar()){
-    mostrar2();
+    mostrar=document.getElementById("resultadosDiv").style.display = "block";
     corregirNumber();
     corregirSelect();
     corregirCheckbox();
