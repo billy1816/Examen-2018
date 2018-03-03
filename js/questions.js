@@ -167,7 +167,7 @@ function corregirNumber(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[0].value;     
   if (s==numeroSecreto) {
-   darRespuestaHtml("Pregunta 1: Correcte!");
+   darRespuestaHtml("Pregunta 1: Correcte! El Bitcoin va arribar a 20.000$ el 16 de desembre de 2017");
    nota +=1;
   }
   else {
@@ -180,7 +180,7 @@ function corregirNumber1(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[16].value;     
   if (s==numeroSecreto1) {
-   darRespuestaHtml("Pregunta 1: Correcte!");
+   darRespuestaHtml("Pregunta 1: Correcte! La unitat més petita du el nom del seu creador, Satoshi");
    nota +=1;
   }
   else {
