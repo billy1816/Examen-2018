@@ -33,7 +33,7 @@ body{background-image:url(../img/fondo1.jpg);
 h1{
 	padding-bottom: 50px;
 }
-form,h1
+form,h1{
 	margin-right:50%;
 	position: relative;
 	left:  0%;
