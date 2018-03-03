@@ -220,8 +220,8 @@ function corregirCheckbox(){
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 3: opció "+i+" Incorrecte");
     } 
-   } darRespuestaHtml("El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!")  
-  }
+   } 
+  } darRespuestaHtml("El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!")  
 }
 //Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
 function corregirCheckbox1(){
