@@ -154,8 +154,8 @@ function corregirNumber1(){
    nota +=1;
   }
   else {
-    if (s>numeroSecreto1) darRespuestaHtml("Pregunta 1: T'has passat");
-    else darRespuestaHtml("Pregunta 1: T'has quedat curt");
+    if (s>numeroSecreto1) darRespuestaHtml("Pregunta 8: T'has passat");
+    else darRespuestaHtml("Pregunta 8: T'has quedat curt");
   }
 }
 
@@ -240,10 +240,10 @@ function corregirCheckbox2(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta2[i]) {
      nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte!");    
+     darRespuestaHtml("Pregunta 6: opció ("+i+"+1) Correcte!");    
     } else {
      nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 6: opció "+i+" Incorrecte");
+     darRespuestaHtml("Pregunta 6: opció ("+i+"+1) Incorrecte");
     }   
    } 
   }
