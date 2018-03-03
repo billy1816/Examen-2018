@@ -57,7 +57,11 @@
  	<option>XRP</option>
 	<answer>0</answer>
     </question>  
-    
+   <question id="examen_008">
+	<type>number</type>
+	<title>La primera compra real amb bitcoins va ser de dues pizzes, quan es va gastar?</title>
+ 	<answer>10000</answer>
+    </question
  
 	
 </questions>
