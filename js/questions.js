@@ -14,7 +14,7 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
- document.getElementsByTagName("submit")[0].onclick = function () {
+ document.getElementsByTagName("imput")[0].onclick = function () {
         document.getElementById("resultadosDiv").style.display = "block";       
     };
  //CORREGIR al apretar el botón
