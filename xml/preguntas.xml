@@ -17,7 +17,7 @@
     <question id="examen_003">
 	<type>checkbox</type>
 	<title>Quines característiques té el Bitcoin?</title>
-	<option>Anonimitat</option>
+	<option>Anonimitat simple</option>
 	<option>Transferències instantànies</option>
 	<option>Centralització econòmica</option>
 	<option>Transferències 100% gratuïtes</option>
@@ -26,7 +26,7 @@
     </question>
     <question id="examen_004">
 	<type>checkbox</type>
-	<title>Quines d'aquestes criptomonedes són anònimes?</title>
+	<title>Quines d'aquestes criptomonedes són més irrastreables que el Bitcoin?</title>
 	<option>Monero</option>
 	<option>Litecoin</option>
 	<option>Zcash</option>
