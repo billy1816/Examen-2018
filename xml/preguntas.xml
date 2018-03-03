@@ -71,6 +71,14 @@
 	<option>2015</option>
 	<answer>1</answer>
     </question>
+	<question id="examen_010">
+	<title>Quin és el tamany màxim d'un bloc dins la cadena de blocs del bitcoin?</title>
+	<option>2MB</option>
+ 	<option>1MB</option>
+ 	<option>8MB</option>
+ 	<option>100MB</option>
+	<answer>1</answer>
+    </question>  
 	
 </questions>
 
