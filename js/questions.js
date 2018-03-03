@@ -1,5 +1,6 @@
 var formElement=null;
 var numeroSecreto=null;
+var numeroSecreto1=null;
 var nombreSecreto=null;
 var respuestaSelect=null;
 var respuestaSelect1=null;
@@ -25,6 +26,7 @@ window.onload = function(){
     corregirNombre();
     corregirCheckbox2();
     corregirSelect1();
+     corregirNumber1();
     presentarNota();
    }
    return false;
@@ -120,6 +122,12 @@ function gestionarXml(dadesXml){
  }
  ponerDatosSelectHtml1(tituloSelect1,opcionesSelect1);
  respuestaSelect1=parseInt(xmlDoc.getElementsByTagName("answer")[9].innerHTML);
+
+ //NUMBER
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloInput2=xmlDoc.getElementsByTagName("title")[7].innerHTML;
+ ponerDatosInputHtml2(tituloInput2);
+ numeroSecreto1=parseInt(xmlDoc.getElementsByTagName("answer")[10].innerHTML);
 }
 //****************************************************************************************************
 //implementación de la corrección
@@ -137,7 +145,19 @@ function corregirNumber(){
     else darRespuestaHtml("Pregunta 1: T'has quedat curt");
   }
 }
-
+function corregirNumber1(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s=formElement.elements[17].value;     
+  if (s==numeroSecreto1) {
+   darRespuestaHtml("Pregunta 1: Correcte!");
+   nota +=1;
+  }
+  else {
+    if (s>numeroSecreto1) darRespuestaHtml("Pregunta 1: T'has passat");
+    else darRespuestaHtml("Pregunta 1: T'has quedat curt");
+  }
+}
 
 function corregirSelect(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
@@ -244,6 +264,9 @@ function corregirSelect1(){
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
  document.getElementById("tituloInput").innerHTML = t;
+}
+function ponerDatosInputHtml2(t){
+ document.getElementById("tituloInput2").innerHTML = t;
 }
 function ponerDatosInputHtml1(t){
  document.getElementById("tituloInput1").innerHTML = t;
