@@ -216,11 +216,10 @@ function corregirCheckbox(){
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 3: opció "+i+" Correcte!");
-        darRespuestaHtml("El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!")
-    } else {
+     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 3: opció "+i+" Incorrecte");
-    }   
+    } darRespuestaHtml("El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!")  
    } 
   }
 }
