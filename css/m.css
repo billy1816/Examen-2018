@@ -23,7 +23,7 @@ h3{
 
 
 
-input[type=checkbox]{width:2%;zoom:1.5}
+input[type=checkbox]{width:20%;zoom:1.5}
 body{background-image:url(../img/fondo1.jpg); 
 	background-position:center;
     background-repeat: no-repeat;
@@ -40,7 +40,9 @@ form,h1{
 	left:  0%;
 	text-align:left;
 	color:#FFFFCC;
+	
 }
+
 
 #resultadosDiv{
 	display:none;
