@@ -3,8 +3,8 @@
 <questions>
     <question id="examen_001">
 	<type>number</type>
-	<title>A quin any va desapareixer la moneda en paper?</title>
- 	<answer>2074</answer>
+	<title>A quin preu màxim ha arribat el bitcoin, en dòlars?</title>
+ 	<answer>20000</answer>
     </question>
     <question id="examen_002">
 	<title>Quina es la unitat més petita del Bitcoin</title>
@@ -62,7 +62,15 @@
 	<title>La primera compra real amb bitcoins va ser de dues pizzes, quan es va gastar?</title>
  	<answer>10000</answer>
 	</question>
- 
+ <question id="examen_009">
+	<type>checkbox</type>
+	<title>A quin any es va crear el Bitcoin?</title>
+	<option>1998</option>
+	<option>2009</option>
+	<option>2011</option>
+	<option>2015</option>
+	<answer>1</answer>
+    </question>
 	
 </questions>
 
