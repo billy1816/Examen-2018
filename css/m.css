@@ -58,6 +58,7 @@ form,h1{
     text-align:left;
 }
 p{
-	white-space:nowrap;
+	white-space: initial;
+
 }
 	
