@@ -148,7 +148,7 @@ function corregirNumber(){
 function corregirNumber1(){
   //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
   //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[17].value;     
+  var s=formElement.elements[16].value;     
   if (s==numeroSecreto1) {
    darRespuestaHtml("Pregunta 1: Correcte!");
    nota +=1;
