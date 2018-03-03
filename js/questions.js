@@ -215,7 +215,7 @@ function corregirCheckbox(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 3: opció "+i+" Correcte! El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!");    
+     darRespuestaHtml("Pregunta 3: opció "+i+" Correcte!")( "El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!");    
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 3: opció "+i+" Incorrecte");
@@ -270,7 +270,7 @@ function corregirCheckbox2(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta2[i]) {
      nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte! Aixií és, alguns països han tengut més afinitat amb les criptomonedes que altres");    
+     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte! Així és, alguns països han tengut més afinitat amb les criptomonedes que altres");    
     } else {
      nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 6: opció "+i+" Incorrecte");
