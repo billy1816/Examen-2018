@@ -180,7 +180,7 @@ function corregirNumber1(){
   //en este ejemplo hace una comparación de números enteros
   var s=formElement.elements[16].value;     
   if (s==numeroSecreto1) {
-   darRespuestaHtml("Pregunta 1: Correcte! La unitat més petita du el nom del seu creador, Satoshi");
+   darRespuestaHtml("Pregunta 8: Correcte! Les dues pizzes a dia d'avui tendrien un preu aproximat de 92.100.000€");
    nota +=1;
   }
   else {
@@ -195,7 +195,7 @@ function corregirSelect(){
   //luego comparar ese value con el value guardado en answer
   var sel = formElement.elements[1];  
   if (sel.selectedIndex-1==respuestaSelect) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("Pregunta 2: Correcte!");
+   darRespuestaHtml("Pregunta 2: Correcte! La unitat més petita duu el nom del seu creador, Satoshi");
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 2: Incorrecte");
@@ -215,7 +215,7 @@ function corregirCheckbox(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta[i]) {
      nota +=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 3: opció "+i+" Correcte!");    
+     darRespuestaHtml("Pregunta 3: opció "+i+" Correcte! El bitcoin no es 100% anònim ni gratuït, per això existeixen altres monedes!");    
     } else {
      nota -=1.0/respuestasCheckbox.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 3: opció "+i+" Incorrecte");
@@ -237,7 +237,7 @@ function corregirCheckbox1(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta1[i]) {
      nota +=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 4: opció "+i+" Correcte!");    
+     darRespuestaHtml("Pregunta 4: opció "+i+" Correcte! Tant Monero com Zcash són més irrastrejables que el Bitcoin, cosa que els dona valor");    
     } else {
      nota -=1.0/respuestasCheckbox1.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 4: opció "+i+" Incorrecte");
@@ -250,7 +250,7 @@ function corregirNombre(){
   //en este ejemplo hace una comparación de números enteros
   var s1= formElement.elements[10].value; 
   if (s1==nombreSecreto) {
-   darRespuestaHtml("Pregunta 5: Correcte!");
+   darRespuestaHtml("Pregunta 5: Correcte! Amb aquest nick es presentava el creador del bitcoin, el qual mai s'ha resolt qui era realment i va desapareixer 2011");
    nota +=1;
   }
   else {
@@ -270,7 +270,7 @@ function corregirCheckbox2(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta2[i]) {
      nota +=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte!");    
+     darRespuestaHtml("Pregunta 6: opció "+i+" Correcte! Aixií és, alguns països han tengut més afinitat amb les criptomonedes que altres");    
     } else {
      nota -=1.0/respuestasCheckbox2.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 6: opció "+i+" Incorrecte");
@@ -284,7 +284,7 @@ function corregirSelect1(){
   //luego comparar ese value con el value guardado en answer
   var sel1 = formElement.elements[15];  
   if (sel1.selectedIndex-1==respuestaSelect1) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("Pregunta 7: Correcte!");
+   darRespuestaHtml("Pregunta 7: Correcte! Aquest algoritme va ser creat per la NASA a 2001 i posteriorment adoptat per el Bitcoin");
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 7: Incorrecte");
@@ -302,7 +302,7 @@ function corregirCheckbox3(){
     //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
     if (escorrecta3[i]) {
      nota +=1.0/respuestasCheckbox3.length;  //dividido por el número de respuestas correctas   
-     darRespuestaHtml("Pregunta 9: Correcte!");    
+     darRespuestaHtml("Pregunta 9: Correcte! A 2008 es va llançar el primer article per Satoshi Nakamoto, per després un any més tard presentar el programari Bitcoin");    
     } else {
      nota -=1.0/respuestasCheckbox3.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 9: Incorrecte");
@@ -316,7 +316,7 @@ function corregirSelect2(){
   //luego comparar ese value con el value guardado en answer
   var sel2 = formElement.elements[21];  
   if (sel2.selectedIndex-1==respuestaSelect2) { //-1 porque hemos puesto una opción por defecto en el select que ocupa la posición 0
-   darRespuestaHtml("Pregunta 10: Correcte!");
+   darRespuestaHtml("Pregunta 10: Correcte! La decisió de mantenir un límit tan petit ha estat controversial i ha provocat l'aparició d'altres monedes com Bitcoin Cash amb uns blocs més grans");
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 10: Incorrecte");
