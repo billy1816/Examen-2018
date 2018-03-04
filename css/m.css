@@ -84,5 +84,9 @@ p{
 	padding:1%;
 }
 #tornar {
+	position:fixed;
+	top:1%;
+	right:1%;
 	display:none;
+	height: 4%;
 }
