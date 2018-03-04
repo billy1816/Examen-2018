@@ -18,11 +18,17 @@ body,input,select,label{
 	font-size:1vw
 }
 h3{
-	font-size:1.5vw
+	font-size:1.5vw;
 }
 
-
-
+a{
+	text-align:right;
+	font-size:3vw;
+	decoration:none;
+}
+a:hover{
+	color:red;
+}
 input[type=checkbox]{width:2%;zoom:1.5}
 body{background-image:url(../img/fondo1.jpg); 
 	background-position:center;
@@ -63,6 +69,7 @@ p{
 }
 	
 #instruccions{
-	background-color:red;
+	background-color:blue;
 	opacity:0.2;
 	border: 2px solid gray;
+	padding:1%;
