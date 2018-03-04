@@ -1,7 +1,9 @@
 a{
 	text-align:right;
 	font-size:3vw;
-	decoration:none;
+	text-decoration:none;
+	position:absolute;
+	right:7%;
 }
 
 body,html{
