@@ -90,3 +90,8 @@ p{
 	display:none;
 	height: 4%;
 }
+#tornar:hover{
+ -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);	
+}
