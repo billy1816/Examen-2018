@@ -71,6 +71,7 @@ form,h1{
     margin-top: 5%;
     margin-right:70%;
     text-align:left;
+    background:rgba(0, 0, 0, 0.7);
 }
 p{
 	white-space: initial;
