@@ -14,6 +14,9 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
+ function changeService(id) {
+    document.getElementById(id).setAttribute("class", "active");
+}
  //CORREGIR al apretar el botón
  formElement=document.getElementById('myform');
  formElement.onsubmit=function(){
