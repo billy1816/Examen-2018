@@ -48,7 +48,8 @@ window.onload = function(){
  document.getElementById("menu").onclick = function(){
   document.getElementById("instruccions").style.display = "none";
   document.getElementById("myform").style.display= "block";
-  document.getElementsByTagName("h1")[0,1].style.display= "block";
+  document.getElementsByTagName("h1")[0].style.display= "block";
+    document.getElementsByTagName("h1")[1].style.display= "block";
  };
 
  xhttp.open("GET", "xml/preguntas.xml", true);
