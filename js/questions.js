@@ -48,7 +48,7 @@ window.onload = function(){
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
 }
-var ins = document.getElementById("instruccions");
+var menu = document.getElementById("menu");
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
