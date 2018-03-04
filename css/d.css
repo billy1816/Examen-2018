@@ -40,6 +40,7 @@ form,h1{
 	left:  0%;
 	text-align:left;
 	color:#FFFFCC;
+	display:none;
 }
 
 #resultadosDiv{
