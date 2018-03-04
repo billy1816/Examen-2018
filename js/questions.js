@@ -48,7 +48,7 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
 }
-
+var ins=xmlDoc.getElementById("instruccions");
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
