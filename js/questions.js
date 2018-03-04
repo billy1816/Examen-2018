@@ -18,6 +18,12 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
  formElement=document.getElementById('myform');
  formElement.onsubmit=function(){
    inicializar();
+  window.onload = function(){ 
+     document.getElementById("menu").onclick = function(){
+    document.getElementById("myform").style.display = "block";
+    document.getElementById("instruccions").style.display = "none";
+};
+
    if (comprobar()){
     mostrar=document.getElementById("resultadosDiv").style.display = "inline-block";
     corregirNumber();
@@ -46,12 +52,7 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
 
-window.onload = function(){ 
-     document.getElementById("menu").onclick = function(){
-    document.getElementById("myform").style.display = "block";
-    document.getElementById("instruccions").style.display = "none";
-};
-
+}
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
