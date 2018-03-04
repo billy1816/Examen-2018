@@ -49,6 +49,10 @@ window.onload = function(){
  xhttp.send();
 }
 var menu = document.getElementById("menu");
+var ins = document.getElementById("instruccions");
+function amagar{
+ menu.onclick = ins.style.display = "none";
+};
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
