@@ -48,10 +48,9 @@ window.onload = function(){
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
 }
-var menu = document.getElementById("menu");
-var ins = document.getElementById("instruccions");
- menu.onclick = function(){
-  ins.style.display = "none";
+
+document.getElementById("menu").onclick = function(){
+  document.getElementById("instruccions").style.display = "none";
  };
 
 //****************************************************************************************************
