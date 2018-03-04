@@ -61,3 +61,7 @@ p{
 	white-space:nowrap;
 }
 	
+#instruccions{
+	background-color:red;
+	opacity:0.2;
+	border: 2px solid gray;
