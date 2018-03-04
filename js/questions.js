@@ -51,7 +51,7 @@ window.onload = function(){
     document.getElementById("myform").style.display = "block";
     document.getElementById("instruccions").style.display = "none";
 };
-}
+
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
