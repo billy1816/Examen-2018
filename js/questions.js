@@ -13,11 +13,6 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
-window.onload = function(){ 
-     document.getElementById("menu").onclick = function(){
-    document.getElementById("myform").style.display = "block";
-    document.getElementById("instruccions").style.display = "none";
-};
 
  //CORREGIR al apretar el botón
  formElement=document.getElementById('myform');
@@ -50,7 +45,12 @@ window.onload = function(){
  };
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
-
+}
+window.onload = function(){ 
+     document.getElementById("menu").onclick = function(){
+    document.getElementById("myform").style.display = "block";
+    document.getElementById("instruccions").style.display = "none";
+};
 
 
 //****************************************************************************************************
