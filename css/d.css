@@ -34,8 +34,8 @@ a:hover{
 	color:red;
 }
 
-a:active ~ #instruccions{
-	display:none;
+a:active ~ .form{
+	display:block;
 }
 
 
