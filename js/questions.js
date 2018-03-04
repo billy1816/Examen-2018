@@ -39,7 +39,7 @@ window.onload = function(){
  document.getElementById("menu").onclick = function(){
     document.getElementById("myform").style.display = "block";
     document.getElementById("instruccions").style.display = "none";
-}
+};
  //LEER XML de xml/preguntas.xml
  var xhttp = new XMLHttpRequest();
  xhttp.onreadystatechange = function() {
