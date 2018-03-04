@@ -16,7 +16,7 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 window.onload = function(){ 
      document.getElementById("menu").onclick = function(){
      
-    document.getElementById("instruccions").style.display = "none";
+    document.getElementById("instruccions").style.color = "yellow";
 };
 
 
