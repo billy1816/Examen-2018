@@ -218,6 +218,7 @@ function corregirSelect(){
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 2: Incorrecte");
+       darRespuestaHtml("La unitat més petita duu el nom del seu creador, Satoshi");
 }
 
 //Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
@@ -275,6 +276,8 @@ function corregirNombre(){
   }
   else {
     darRespuestaHtml("Pregunta 5: Incorrecte");
+     darRespuestaHtml("El seu nick era Satoshi Nakamoto, la seva identitat mai ha estat coneguda");
+   nota +=1;
   }
 }
 function corregirCheckbox2(){
@@ -309,6 +312,7 @@ function corregirSelect1(){
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 7: Incorrecte");
+     darRespuestaHtml("L'aloritme del Bitcoin es el SHA-256, creat per la NASA a 2001");
 }
 function corregirCheckbox3(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
@@ -328,6 +332,7 @@ function corregirCheckbox3(){
     } else {
      nota -=1.0/respuestasCheckbox3.length;  //dividido por el número de respuestas correctas   
      darRespuestaHtml("Pregunta 9: Incorrecte");
+     darRespuestaHtml("A 2008 es va llançar el primer article per Satoshi Nakamoto, per després un any més tard presentar el programari Bitcoin");
     }   
    } 
   }
@@ -343,6 +348,7 @@ function corregirSelect2(){
    nota +=1;
   }
   else darRespuestaHtml("Pregunta 10: Incorrecte");
+ darRespuestaHtml("Encara que ha provocat molta controversia, la mida màxima segueix sent 1MB");
 }
 //****************************************************************************************************
 // poner los datos recibios en el HTML
