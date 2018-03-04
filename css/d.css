@@ -36,7 +36,9 @@ span:hover{
 }
 
 
-
+img {
+	size:100%;
+}
 
 input[type=checkbox]{width:2%;zoom:1.5}
 body{background-image:url(../img/fondo1.jpg); 
