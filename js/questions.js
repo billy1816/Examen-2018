@@ -50,9 +50,9 @@ window.onload = function(){
 }
 var menu = document.getElementById("menu");
 var ins = document.getElementById("instruccions");
-function amagar() {
- menu.onclick = ins.style.display = "none";
-};
+ menu.onclick = function(){
+  ins.style.display = "none";
+ };
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
