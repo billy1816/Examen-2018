@@ -36,10 +36,7 @@ window.onload = function(){
    }
    return false;
  }
- document.getElementById("menu").onclick = function(){
-     
-    document.getElementById("instruccions").style.display = "none";
-};
+
  //LEER XML de xml/preguntas.xml
  var xhttp = new XMLHttpRequest();
  xhttp.onreadystatechange = function() {
@@ -52,7 +49,10 @@ window.onload = function(){
  xhttp.send();
 }
 
-
+ document.getElementById("menu").onclick = function(){
+     
+    document.getElementById("instruccions").style.display = "none";
+};
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
 // xmlDOC es el documento leido XML. 
