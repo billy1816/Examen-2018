@@ -17,6 +17,7 @@ window.onload = function(){
     
 document.getElementById("menu").onclick = function(){
     document.getElementById("myform").style.display = "block";
+    document.getElementById("instruccions").style.display = "none";
 }
  //CORREGIR al apretar el botón
  formElement=document.getElementById('myform');
