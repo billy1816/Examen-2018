@@ -14,10 +14,27 @@ var nota = 0;  //nota de la prueba sobre 3 puntos (hay 3 preguntas)
 //**************************************************************************************************** 
 //Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
 window.onload = function(){ 
-     document.getElementById("menu").onclick = function(){
-     
-    document.getElementById("instruccions").style.color = "yellow";
-};
+ //CORREGIR al apretar el botón
+ formElement=document.getElementById('myform');
+ formElement.onsubmit=function(){
+   inicializar();
+   if (comprobar()){
+    mostrar=document.getElementById("resultadosDiv").style.display = "inline-block";
+    corregirNumber();
+    corregirSelect();
+    corregirCheckbox();
+    corregirCheckbox1();
+    corregirNombre();
+    corregirCheckbox2();
+    corregirSelect1();
+    corregirNumber1();
+    corregirCheckbox3();
+    corregirSelect2();
+    presentarNota();
+   }
+   return false;
+ }
+
 
 
  //LEER XML de xml/preguntas.xml
