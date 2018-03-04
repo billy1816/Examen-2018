@@ -83,3 +83,6 @@ p{
 	border: 2px solid gray;
 	padding:1%;
 }
+#tornar {
+	display:none;
+}
