@@ -35,12 +35,10 @@ span:hover{
 	color:#FFFFCC;
 }
 
-#logo{
-	width:100%;
-}
+
 img {
-	height:100%;
-	width:auto;
+	height:auto%;
+	width:50%;
 }
 
 input[type=checkbox]{width:2%;zoom:1.5}
