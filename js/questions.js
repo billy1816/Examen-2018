@@ -47,6 +47,7 @@ window.onload = function(){
  };
  document.getElementById("menu").onclick = function(){
   document.getElementById("instruccions").style.display = "none";
+  document.getElementById("logo").style.display = "none";
   document.getElementById("myform").style.display= "block";
   document.getElementsByTagName("h1")[0].style.display= "block";
     document.getElementsByTagName("h1")[1].style.display= "block";
@@ -54,6 +55,7 @@ window.onload = function(){
  };
  document.getElementById("tornar").onclick = function(){
    document.getElementById("instruccions").style.display = "block";
+   document.getElementById("logo").style.display = "block";
   document.getElementById("myform").style.display= "none";
   document.getElementsByTagName("h1")[0].style.display= "none";
     document.getElementsByTagName("h1")[1].style.display= "none";
