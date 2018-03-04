@@ -74,7 +74,9 @@ form,h1{
     text-align:left;
 }
 p{
-	white-space:nowrap;
+	opacity: 1;
+    word-wrap: break-word;
+    text-align: center;
 }
 	
 #instruccions{
