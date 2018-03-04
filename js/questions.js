@@ -50,7 +50,7 @@ window.onload = function(){
 }
 var menu = document.getElementById("menu");
 var ins = document.getElementById("instruccions");
-function amagar{
+function amagar() {
  menu.onclick = ins.style.display = "none";
 };
 
