@@ -52,7 +52,13 @@ window.onload = function(){
     document.getElementsByTagName("h1")[1].style.display= "block";
   document.getElementById("tornar").style.display= "block";
  };
-
+ document.getElementById("tornar").onclick = function(){
+   document.getElementById("instruccions").style.display = "block";
+  document.getElementById("myform").style.display= "none";
+  document.getElementsByTagName("h1")[0].style.display= "none";
+    document.getElementsByTagName("h1")[1].style.display= "none";
+  document.getElementById("tornar").style.display= "none";
+ };
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
  
