@@ -33,9 +33,10 @@ h3{
 a:hover{
 	color:red;
 }
-#Instruccions.active{
-	display:none;
-}
+
+
+#toggle1, #toggle2, #toggle3 {display:none}
+#toggle1.active, #toggle2.active, #toggle3.active{display: block}
 
 input[type=checkbox]{width:2%;zoom:1.5}
 body{background-image:url(../img/fondo1.jpg); 
