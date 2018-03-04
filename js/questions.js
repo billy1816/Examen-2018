@@ -45,13 +45,15 @@ window.onload = function(){
    
   }
  };
- xhttp.open("GET", "xml/preguntas.xml", true);
- xhttp.send();
-}
-
-document.getElementById("menu").onclick = function(){
+ document.getElementById("menu").onclick = function(){
   document.getElementById("instruccions").style.display = "none";
  };
+
+ xhttp.open("GET", "xml/preguntas.xml", true);
+ xhttp.send();
+ 
+}
+
 
 //****************************************************************************************************
 // Recuperamos los datos del fichero XML xml/preguntas.xml
