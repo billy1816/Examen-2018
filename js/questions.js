@@ -61,7 +61,7 @@ window.onload = function(){
   document.getElementsByTagName("h1")[0].style.display= "none";
     document.getElementsByTagName("h1")[1].style.display= "none";
   document.getElementById("tornar").style.display= "none";
-    document.getElementById("resultadosDiv").style.display= "block";
+   
  };
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
