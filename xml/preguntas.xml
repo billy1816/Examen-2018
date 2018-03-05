@@ -7,7 +7,7 @@
  	<answer>20000</answer>
     </question>
     <question id="examen_002">
-	<title>2. Quina es la unitat més petita del Bitcoin</title>
+	<title>2. Quina és la unitat més petita del bitcoin?</title>
 	<option>mBTC</option>
  	<option>μBTC</option>
  	<option>BTC</option>
@@ -16,7 +16,7 @@
     </question>  
     <question id="examen_003">
 	<type>checkbox</type>
-	<title>3. Quines característiques té el Bitcoin?</title>
+	<title>3. Quines característiques té el bitcoin?</title>
 	<option>Anonimitat simple</option>
 	<option>Transferències instantànies</option>
 	<option>Centralització econòmica</option>
@@ -26,7 +26,7 @@
     </question>
     <question id="examen_004">
 	<type>checkbox</type>
-	<title>4. Quines d'aquestes criptomonedes són més irrastrejables que el Bitcoin?</title>
+	<title>4. Quines d'aquestes criptomonedes són més irrastrejables que el bitcoin?</title>
 	<option>Monero</option>
 	<option>Litecoin</option>
 	<option>Zcash</option>
@@ -50,7 +50,7 @@
 	<answer>3</answer>
     </question>
    <question id="examen_007">
-	<title>7. Quin algoritme és utilitzat per el Bitcoin?</title>
+	<title>7. Quin és l'algoritme utilitzat per el bitcoin?</title>
 	<option>SHA-256</option>
  	<option>Scrypt</option>
  	<option>X11</option>
@@ -59,12 +59,12 @@
     </question>  
    <question id="examen_008">
 	<type>number</type>
-	<title>8. La primera compra real amb bitcoins va ser de dues pizzes, quants es varen utilitzar?</title>
+	<title>8. La primera compra real amb bitcoins va ser de dues pizzes, quants en varen utilitzar?</title>
  	<answer>10000</answer>
 	</question>
  <question id="examen_009">
 	<type>checkbox</type>
-	<title>9. A quin any es va crear el Bitcoin?</title>
+	<title>9. A quin any es va crear el bitcoin?</title>
 	<option>1998</option>
 	<option>2009</option>
 	<option>2011</option>
