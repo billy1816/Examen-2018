@@ -351,8 +351,10 @@ function corregirSelect2(){
       darRespuestaHtml("La decisió de mantenir un límit tan petit ha estat controversial i ha provocat l'aparició d'altres monedes com Bitcoin Cash amb uns blocs més grans");
    nota +=1;
   }
-  else darRespuestaHtml("Pregunta 10: Incorrecte");
+  else {
+   darRespuestaHtml("Pregunta 10: Incorrecte");
  darRespuestaHtml("Encara que ha provocat molta controversia, la mida màxima segueix sent 1MB");
+  }
 }
 //****************************************************************************************************
 // poner los datos recibios en el HTML
