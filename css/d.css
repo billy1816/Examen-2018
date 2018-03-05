@@ -23,7 +23,7 @@ body{
 	padding-right:15%;
 	background-color:white;}
 	body,input,select,label{
-	font-size:1vw
+	font-size:1vw;
 }
 h3{
 	font-size:1.5vw;
@@ -41,13 +41,13 @@ img {
 	width:50%;
 }
 
-input[type=checkbox]{width:2%;zoom:1.5}
+input[type=checkbox]{width:2%;zoom:1.5;}
 body{background-image:url(../img/fondo1.jpg); 
 	background-position:center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-	padding:5%}	
+	padding:5%;}	
 
 h1{
 	padding-bottom: 5px;
