@@ -6,3 +6,6 @@ Les preguntes es basen en tres tipus:
 * Text / Número
 * Select
 * Checkbox
+Les preguntes tipus checkbox tenen més d'una resposta menys la darrera, que demana una data, i cada selecció errònea resta. Per poder corregir s'han d'emplenar totes les respostes. 
+Quan es pitja corregir sortian les respostes i una petita explicació de la pregunta. Al final sortirà la puntuació final.
+
