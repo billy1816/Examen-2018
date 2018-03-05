@@ -221,8 +221,10 @@ function corregirSelect(){
       darRespuestaHtml("La unitat més petita duu el nom del seu creador, Satoshi");
    nota +=1;
   }
-  else darRespuestaHtml("Pregunta 2: Incorrecte");
+  else {
+   darRespuestaHtml("Pregunta 2: Incorrecte");
        darRespuestaHtml("La unitat més petita duu el nom del seu creador, Satoshi");
+  }
 }
 
 //Si necesitáis ayuda para hacer un corregirRadio() decirlo, lo ideal es que a podáis construirla modificando corregirCheckbox
