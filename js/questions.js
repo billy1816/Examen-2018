@@ -313,8 +313,10 @@ function corregirSelect1(){
       darRespuestaHtml("Aquest algoritme va ser creat per la NASA a 2001 i posteriorment adoptat per el Bitcoin");
    nota +=1;
   }
-  else darRespuestaHtml("Pregunta 7: Incorrecte");
+  else {
+   darRespuestaHtml("Pregunta 7: Incorrecte");
      darRespuestaHtml("L'aloritme del Bitcoin es el SHA-256, creat per la NASA a 2001");
+  }
 }
 function corregirCheckbox3(){
   //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
