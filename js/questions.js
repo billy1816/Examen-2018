@@ -50,8 +50,9 @@ window.onload = function(){
   document.getElementById("logo").style.display = "none";
   document.getElementById("myform").style.display= "block";
   document.getElementsByTagName("h1")[0].style.display= "block";
-    document.getElementsByTagName("h1")[1].style.display= "block";
+  document.getElementsByTagName("h1")[1].style.display= "block";
   document.getElementById("tornar").style.display= "block";
+  document.getElementById("resultadosDiv").style.display= "none";
  };
  document.getElementById("tornar").onclick = function(){
    document.getElementById("instruccions").style.display = "block";
@@ -60,6 +61,7 @@ window.onload = function(){
   document.getElementsByTagName("h1")[0].style.display= "none";
     document.getElementsByTagName("h1")[1].style.display= "none";
   document.getElementById("tornar").style.display= "none";
+    document.getElementById("resultadosDiv").style.display= "block";
  };
  xhttp.open("GET", "xml/preguntas.xml", true);
  xhttp.send();
